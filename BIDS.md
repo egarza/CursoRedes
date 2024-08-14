@@ -132,9 +132,9 @@ Como pueden ver, tenemos el criterio de inclusion "in" como
 ```
 Corremos ahora todo para ver si funciona.
 
-dcm2bids -d sourcedata/020/ -p 020 -c code/config.json --auto_extract_entities
+`dcm2bids -d sourcedata/020/ -p 020 -c code/config.json --auto_extract_entities`
 
-Debemos ver los folders del sujeto `sub_20` ahí.
+Debemos ver los folders del sujeto `sub_20` dentro del folder del proyecto.
 
 
 
