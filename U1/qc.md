@@ -11,7 +11,7 @@ Anatomia
 Funcional
 ```gtkyd_check.py -infiles data_00_basic/sub-*/ses-*/func/*.nii.gz -outdir check_all_epi```
 
-The top row shows the things checked:
+Las variables basicas que revisar:
 
 * n3     : matrix size in 3 dimensions
 * nv     : number of volumes (AKA number of time points)
