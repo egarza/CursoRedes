@@ -36,3 +36,22 @@ nipreps/mriqc \
 group
 ```
 
+## Correr MRIQC en Don Clusterio usando apptainer
+
+Se debe activar el modulo apptainer
+
+`module load apptainer`
+
+Despues se debe crear una imagen de MRIQC importada de docker
+
+`apptainer build mriqc.sif docker://nipreps/mriqc`
+
+Esta se guarda en el folder donde estas. Una vez creada la imagen, ahora si podemos usar apptainer, por ejemplo:
+
+```
+fsl_sub -N mriqc apptainer run --cleanenv \
+--bind /misc/tezca/egarza/Curso_Redes2026/afni/data_00_basic:/bids \
+--bind /misc/tezca/egarza/Curso_Redes2026/derivatives/mriqc:/output \
+/misc/tezca/egarza/apps/mriqc.sif \
+/bids /output participant
+```
