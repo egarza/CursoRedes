@@ -267,3 +267,13 @@ o puedes hacerlo en forma de script para muchos sujetos en paralelo en el cluste
 ```
 for suj in sub-112 sub-115; do fsl_sub -N afniproc_$suj tcsh -xef $suj/proc.$suj.rest 2>&1 | tee $suj/output.proc.$suj.rest; done
 ```
+
+# Quality Control
+
+Para entender el QC, pueden revisar esta página: [https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/tutorials/apqc_html/apqc_ex1.html](https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/tutorials/apqc_html/apqc_ex1.html)
+
+
+```
+open_apqc.py -infiles QC_*/index.html
+```
+
