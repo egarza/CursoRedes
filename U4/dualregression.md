@@ -168,9 +168,11 @@ dual_regression ../melodic.gica/groupmelodic.ica/melodic_IC.nii.gz 1 ../design_d
 /mnt/c/Trabajo/Academia/Docencia/Cursos/2026/CursoRedes_2026/fsl/data/func/sub-091_task-rest_bold_melodic.ica/reg_standard/filtered_func_data \
 /mnt/c/Trabajo/Academia/Docencia/Cursos/2026/CursoRedes_2026/fsl/data/func/sub-093_task-rest_bold_melodic.ica/reg_standard/filtered_func_data
 ```
+Dentro de tu folder, en este caso `test`, estaran tus resultados.
+Si corriste solo `1` permutacion, solo habrá archivos Stage 3 `tstat`.
+Si corriste `randomise`, habrá archivos Stage 3 `corrp` que son los resultados estadísticos de tu modelo. 
 
-Si corriste solo `1` permutacion, solo habrá archivos Stage 2 `tstat`.
-Si corriste `randomise`, habrá archivos `corrp` que son los resultados estadísticos de tu modelo. 
+Para visualizar puedes usar el Template que usaste en el analisis y uno de los resultados del Stage 3. Recuerda que FSLEyes usa 0.95 y no 0.05 como threshold.
 
 ### Explicación de los resultados
 
