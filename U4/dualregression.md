@@ -1,6 +1,7 @@
 # Group ICA y Dual Regression
 
 En este ejemplo usaremos FSL para realizar ICA usando Melodic y después hacer análisis estadístico de las redes usando Dual Regression.
+El video de la práctica está en este [link](https://youtu.be/JQtfDCcH5X4?si=wyf4kFm3p7yDsT4q)]
 
 ## Bajar FSL
 
@@ -191,7 +192,3 @@ Para visualizar puedes usar el Template que usaste en el analisis y uno de los r
 Esto significa que si evalúas (con `randomise`) todos los componentes encontrados por el ICA de grupo inicial, y no tienes una razón previa para considerar solo uno de ellos, debes corregir tus valores p corregidos por un factor adicional.
 
 Por ejemplo, digamos que tu ICA de grupo encontró 30 componentes, y decidiste ignorar 18 de ellos por ser artefactos. Por lo tanto, solo consideraste 12 RSN como de interés potencial, y miraste los resultados de `randomise` para estas 12, siendo tu modelo una prueba de dos grupos (controles y pacientes). Sin embargo, no sabías si estabas buscando aumentos o disminuciones en la conectividad de las RSN, por lo que ejecutaste el contraste de dos grupos en ambas direcciones para cada RSN. En este caso, en lugar de que tus valores p corregidos deban ser `< 0.05` para tener significancia completa, ¡realmente necesitan ser `< 0.05 / (12 * 2) = 0.002`.
-
-
-
-
